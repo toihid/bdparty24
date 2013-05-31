@@ -1,0 +1,137 @@
+*{
+	/* Resetting the default styles of the page */
+	margin:0;
+	padding:0;
+}
+
+
+.sponsorListHolder{
+	margin-bottom:30px;
+}
+
+.sponsor{
+	width:164px;
+	height:162px;
+	float:left;
+	margin:0px;
+		border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #d9d9d9;
+box-shadow:0 0 1px 1px #D6E6F8;
+border:none;
+border-radius:5px;
+	margin-bottom:10px;
+	/* Giving the sponsor div a relative positioning: */
+	position:relative;
+	cursor:pointer;
+}
+
+.sponsorFlip{
+	/*  The sponsor div will be positioned absolutely with respect
+		to its parent .sponsor div and fill it in entirely */
+
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #d9d9d9;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	border:1px solid #ddd;
+	border:none;	
+}
+
+.sponsorFlip:hover{
+	border:1px solid #999;
+	
+	/* CSS3 inset shadow: */
+	-moz-box-shadow:0 0 30px #999 inset;
+	-webkit-box-shadow:0 0 30px #999 inset;
+	box-shadow:0 0 30px #999 inset;
+}
+
+.sponsorFlip img{
+	/* Centering the logo image in the middle of the sponsorFlip div */
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-70px 0 0 -70px;
+}
+
+.sponsorData{
+	/* Hiding the .sponsorData div */
+	display:none;
+}
+
+.sponsorDescription{
+	font-size:17px;
+	padding:50px 10px 20px 20px;
+	font-style:italic;
+}
+
+.sponsorURL{
+	font-size:10px;
+	font-weight:bold;
+	padding-left:20px;
+}
+
+.clear{
+	/* This class clears the floats */
+	clear:both;
+}
+
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+#main{
+	position:relative;
+	padding-top:3px;
+	width:160px;
+}
+
+h1{
+	padding:30px 0;
+	text-align:center;
+	text-shadow:0 1px 1px white;
+	margin-bottom:30px;
+	background:url("img/page_bg.gif") repeat-x bottom #f8f8f8;
+}
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+h2{
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+	
+	position:absolute;
+	right:1047px;
+	top:112px;
+}
+
+.note{
+	font-size:12px;
+	font-style:italic;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+.sponsorURL a, a:visited {
+	color:#fff;
+	text-decoration:none;
+	outline:none;
+}
+
+.sponsorURL a:hover{
+	text-decoration:underline;
+}
+
+.sponsorURL a img{
+	border:none;
+}
